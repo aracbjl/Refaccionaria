@@ -287,7 +287,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\alopobre.png" />
+    <Content Include="images\alopobremasroyal.png" />
     <Content Include="images\bg.jpg" />
+    <Content Include="images\chesse_1_1.png" />
+    <Content Include="images\extrema.png" />
+    <Content Include="images\golf.png" />
+    <Content Include="images\hawaiana.png" />
+    <Content Include="images\huachana_7.png" />
+    <Content Include="images\mexicana.jpg" />
+    <Content Include="images\parrillera.jpg" />
     <Content Include="images\pic01.jpg" />
     <Content Include="images\pic02.jpg" />
     <Content Include="images\pic03.jpg" />
