@@ -12,14 +12,14 @@ namespace TrabajoFinalWeb.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class DetalleBoleta
+    public partial class PPS
     {
         public int ID { get; set; }
-        public int IdPedido { get; set; }
-        public decimal MontoTotal { get; set; }
-        public int IdModoDePago { get; set; }
+        public Nullable<int> IdProducto { get; set; }
+        public Nullable<int> IdPedido { get; set; }
+        public string Observacion { get; set; }
     
-        public virtual ModoDePago ModoDePago { get; set; }
-        public virtual Pedido Pedido { get; set; }
+        public virtual Producto Producto { get; set; }
+        public virtual PS PS { get; set; }
     }
 }

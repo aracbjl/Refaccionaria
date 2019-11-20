@@ -12,21 +12,22 @@ namespace TrabajoFinalWeb.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class ModoDePago
+    public partial class PS
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ModoDePago()
+        public PS()
         {
             this.DBS = new HashSet<DBS>();
-            this.DetalleBoleta = new HashSet<DetalleBoleta>();
+            this.PPS = new HashSet<PPS>();
         }
     
         public int ID { get; set; }
-        public string Descripcion { get; set; }
+        public Nullable<bool> Atendido { get; set; }
+        public string Detalle { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DBS> DBS { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetalleBoleta> DetalleBoleta { get; set; }
+        public virtual ICollection<PPS> PPS { get; set; }
     }
 }

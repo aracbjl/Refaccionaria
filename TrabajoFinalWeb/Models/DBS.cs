@@ -12,14 +12,14 @@ namespace TrabajoFinalWeb.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class DetalleBoleta
+    public partial class DBS
     {
         public int ID { get; set; }
-        public int IdPedido { get; set; }
-        public decimal MontoTotal { get; set; }
-        public int IdModoDePago { get; set; }
+        public Nullable<int> IdPedido { get; set; }
+        public Nullable<decimal> MontoTotal { get; set; }
+        public Nullable<int> IdModoDePago { get; set; }
     
         public virtual ModoDePago ModoDePago { get; set; }
-        public virtual Pedido Pedido { get; set; }
+        public virtual PS PS { get; set; }
     }
 }

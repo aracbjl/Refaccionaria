@@ -22,7 +22,7 @@ namespace TrabajoFinalWeb.Controllers
     [AdminsOnly]
     public class DetalleBoletasController : Controller
     {
-        private RestauranteEntitiesContext db = new RestauranteEntitiesContext();
+        private  db = new RestauranteEntitiesContext();
         // GET: DetalleBoletas
         public ActionResult Index()
         {

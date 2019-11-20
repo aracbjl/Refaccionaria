@@ -11,31 +11,26 @@ namespace TrabajoFinalWeb.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class Empleado
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Empleado()
         {
-            this.Pedidoes = new HashSet<Pedido>();
+            this.Pedido = new HashSet<Pedido>();
         }
-
-        [DisplayName("Nombre de Usuario")]
+    
         public string ID { get; set; }
         public string Contraseña { get; set; }
         public int IdTipoEmpleado { get; set; }
-        [DisplayName("Nombre Completo")]
         public string Nombre { get; set; }
-        [DisplayName("Numero de Celular")]
         public int Celular { get; set; }
-        [DisplayName("Correo Electronico")]
         public string Correo { get; set; }
         public string Direccion { get; set; }
         public decimal Sueldo { get; set; }
     
         public virtual TipoEmpleado TipoEmpleado { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Pedido> Pedidoes { get; set; }
+        public virtual ICollection<Pedido> Pedido { get; set; }
     }
 }

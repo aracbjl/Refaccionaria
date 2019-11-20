@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ded9e5abc5ea42e7bd3994fc87fa4d71" Name="Diagram1">
+        <EntityTypeShape EntityType="Baterias_dbModel.DBS" Width="1.5" PointX="8" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.DetalleBoleta" Width="1.5" PointX="8" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.Empleado" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.ModoDePago" Width="1.5" PointX="5.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.Pedido" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.PPS" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.Producto" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.Productos_Pedidos" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.PS" Width="1.5" PointX="3" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.TipoEmpleado" Width="1.5" PointX="1.5" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Baterias_dbModel.TipoProducto" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="Baterias_dbModel.FK_DBS_ModoDePago" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_DBS_PS" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_DetalleBoleta_ModoDePago" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_DetalleBoleta_Pedido" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_Empleado_TipoEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_Pedido_Pedido" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_Productos_Pedidos_Pedido" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_PPS_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_PPS_PS" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_Producto_TipoProducto" ManuallyRouted="false" />
+        <AssociationConnector Association="Baterias_dbModel.FK_Productos_Pedidos_Producto" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

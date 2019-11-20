@@ -11,27 +11,23 @@ namespace TrabajoFinalWeb.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class Pedido
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Pedido()
         {
-            this.DetalleBoletas = new HashSet<DetalleBoleta>();
+            this.DetalleBoleta = new HashSet<DetalleBoleta>();
             this.Productos_Pedidos = new HashSet<Productos_Pedidos>();
         }
     
         public int ID { get; set; }
-        [DisplayName("¿Fue Atendido?")]
         public bool Atendido { get; set; }
-        [DisplayName("Cliente")]
         public string Detalle { get; set; }
-        [DisplayName("Atendio el Empleado")]
         public string IdEmpleado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetalleBoleta> DetalleBoletas { get; set; }
+        public virtual ICollection<DetalleBoleta> DetalleBoleta { get; set; }
         public virtual Empleado Empleado { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Productos_Pedidos> Productos_Pedidos { get; set; }
